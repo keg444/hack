@@ -1,0 +1,53 @@
+This is upBibTeX, Version 0.99d-j0.36-u1.30 (utf8.euc) (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 03.aux
+The style file: junsrt.bst
+Database file #1: refs.bib
+"{" immediately follows a field name---line 56 of file refs.bib
+ :   note=報道発表資料「音響OFDM」技術を開発, \url
+ :                                                {https://www.docomo.ne.jp/info/news_release/page/20060413.html}. (2025/4/27 閲覧)"
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "ref:ofdm_docomo"
+You've used 3 entries,
+            2270 wiz_defined-function locations,
+            561 strings with 4421 characters,
+and the built_in function-call counts, 970 in all, are:
+= -- 76
+> -- 18
+< -- 6
++ -- 8
+- -- 5
+* -- 45
+:= -- 120
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 66
+empty$ -- 95
+format.name$ -- 10
+if$ -- 242
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 3
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 54
+stack$ -- 0
+substring$ -- 56
+swap$ -- 22
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 7
+width$ -- 4
+write$ -- 34
+is.kanji.str$ -- 31
+(There was 1 error message)

@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref:sound_audible}
+松岡保静.
+\newblock 可聴音を利用した近距離情報伝送技術.
+\newblock 博士論文, 2016.
+
+\bibitem{ref:sound_underwater}
+樹田行弘, 出口充康, 志村拓也.
+\newblock 水中音響通信技術の紹介.
+\newblock 電子情報通信学会　通信ソサイエティマガジン, Vol.~15, No.~4, pp.
+  271--283, 2022.
+
+\bibitem{ref:ofdm}
+松岡保静.
+\newblock 音響データ通信技術 : 音響ofdm(<小特集>携帯情報機器における音響技術).
+\newblock 日本音響学会誌, Vol.~68, No.~3, pp. 143--147, 2012.
+
+\end{thebibliography}

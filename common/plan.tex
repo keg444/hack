@@ -1,0 +1,186 @@
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+\usepackage{float}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{url}
+
+\titleformat*{\section}{\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\makeatletter
+  \renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.4\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\makeatletter
+  % sectionの下マージンを小さく
+  \renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {0.1\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\renewcommand{\thesubsection}{\thesection-\arabic{subsection}.}
+
+
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-4.5truemm}
+\setlength{\oddsidemargin}{0.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+\newcolumntype{b}{!{\vrule width 1pt}}
+\newcommand{\bhline}{\noalign{\hrule height 1pt}}   
+
+
+\begin{document}
+提出日: 20xx年xx月xx日
+\begin{center}
+\huge{実験計画書}
+\end{center}
+\begin{flushright}
+\end{flushright}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{bp{15.5truecm}b}
+  \bhline
+  \large{\bf{}}
+  \\ \bhline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{技術的・社会的な背景とシステムの目的}\label{sec:intro}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{技術的・社会的な課題や要求}
+	\\ \bhline
+\subsection{類似のシステム}
+
+	 \\ \bhline
+\subsection{システムの目的と独自性}
+
+	\\ \bhline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{システムの概要}\label{sec:about_system}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{システム全体の構成}
+	
+	\\ \bhline
+\subsection{1つ目の要素システムの構成}
+	
+	 \\ \bhline
+\subsection{2つ目の要素システムの構成}
+	
+	 \\ \bhline
+\subsection{$n$つ目の要素システムの構成}
+	
+	 \\ \bhline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{必要な作業}\label{sec:tasks}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{1つ目の要素システムを構築する作業}
+光を用いた通信システムでは，8個のLEDの色のパターンを利用してデータの送受信を行う．
+このシステムはLEDを8個並べて全消灯から全点灯で8bitを表すため，各LEDに照度センサを対応させ，そのビット列を判断する．
+まずArduinoにセンサを各ピンに接続し，LEDの光を受け取る回路を組む．
+次にセンサから光を受け取ると0または1を返すプログラムを作成し，8つのセンサの0または1の情報を結合してビット列に直す．
+そして，直したビット列からasciiコードに対応した文字に変換する．
+	 \\ \bhline
+\subsection{2つ目の要素システムを構築する作業}
+音を用いた通信システムでは，低いドから高いドまでの8つの音程を利用してデータの送受信を行う．
+まず光の受信によって変換した文字をasciiコードから8bitのビット列に変換する．
+このビット列を4bitずつ半分に分け，各4bitに対応した音を鳴らすことで1文字を表現する．
+このために，Arduinoにスピーカを接続し，分けた4bitに対応する音を出力するプログラムを作成する．
+	 \\ \bhline
+\subsection{$n$つ目の要素システムの構成}
+	
+	 \\ \bhline
+\subsection{全体のシステム(要素システムの結合)}
+	
+	\\ \bhline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{担当者割り当て}\label{sec:assignment}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{スケジュール}\label{sec:schedule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{必要な機材}\label{sec:equipment}
+\begin{itemize}
+  \item Arduino Uno R4 WiFi 1個
+  \item 照度センサ（フォトトランジスタ）560nmNJL7502L（貸出有）8個
+  \item ダイナミックスピーカ WYGD50D-8-03（貸出有）1個
+  \item ブレッドボード 1個
+  \item 抵抗器 9個
+\end{itemize}
+%\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{システムの評価指標と具体的な数値目標}\label{sec:evaluation}
+% 音の受信について，音がなってからLEDが点灯するまでの応答時間を1秒以下にすることを目標とする．
+% 人間がデータ入力をしてから応答があるまでにラグを感じずに作業できるためである\cite{ref:user_reaction}．
+光の受信について，照度センサが光を検知してテキストが出力されるまでにかかる時間を100 msに抑えることを目標とする．
+これはLEDの光の反射から傾斜角を計測する傾斜センサの応答時間が100msほどであるからである\cite{ref:keisha}．
+音の送信における評価指標として，通信距離を評価する．
+屋内でスピーカからのサイレン音をスマートフォンを用いて受信する実験では通信距離が10 mを超えても適切に通信が可能であると報告があり．今回の音程の差による通信において，通信可能距離を10 mを目標とする．
+
+\begin{thebibliography}{99}
+  % \bibitem{ref:user_reaction}
+  % Ben Shneiderman, Catherine Plaisant，Designing the User Interface: Strategies for Effective Human-Computer Interaction，Addison-Wesley，Vol.4，2004
+
+  % \bibitem{ref:kenchi}
+  % 水知 力，梅林 健太，Janne J. Lehtom\"\a ki，Miguel L\'opez-Bena\'\i tez，鈴木 康夫，周波数利用観測のための誤警報除去法のパラメータ設計に関する一検討，電子情報通信学会，2016
+
+  \bibitem{ref:keisha}
+  下尾 浩正，南部 幸久，寺村 正広，ニューラルネットワーク比較器を用いた傾斜センサによる応答時間の短縮，電気学会論文誌，Vol.139，No.9，pp.310-316，2019
+
+  \bibitem{ref:tone}
+  小嶋 徹也，鎌田 寛，Udaya PARAMPALLI，楽曲を用いた通信システム，東京工業高等専門学校研究報告書，No.49，2017
+  \bibitem{ref:tone2}
+  Youki Sada，Tetsuya Kojima，Improvement of Emergency Broadcasting System Based on Audio Data Hiding，IEICE Tech. Rep.，Vol.117，No.476，EMM2017-88，pp.55-60，2018．
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,132 @@
+\documentclass[a4paper,12pt,oneside]{jex}
+% \documentclass{article}
+
+
+
+\renewcommand{\baselinestretch}{1.1}
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{24cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\topmargin}{-1.0cm}
+
+
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{xcolor}
+\usepackage[cmex10]{amsmath}
+\usepackage[deluxe]{otf}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ascmac}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{float} 
+\usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{multirow,multicol}
+\usepackage{wrapfig}
+\usepackage{listings,jvlisting} 
+% \usepackage[active,tightpage]{preview}
+\usepackage{booktabs}
+\usepackage{xcolor}
+% \newcommand{\hbline}{\Xhline{1.2pt}}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage{multirow}
+
+\definecolor{lb}{RGB}{180,200,249}
+
+
+\captionsetup{format=hang}
+\lstset{
+  basicstyle={\ttfamily\small},
+  identifierstyle={\small},
+  commentstyle={\small\itshape\color{gray}},
+  keywordstyle={\small\bfseries\color{blue}},
+  stringstyle={\small\ttfamily\color{brown}},
+  showstringspaces=false,
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+\renewcommand{\lstlistingname}{ソースコード}
+
+\pagestyle{headings}
+
+
+
+\begin{document}
+\thispagestyle{empty}
+\setcounter{tocdepth}{3}
+
+\section{自分自身のアイデア}
+Arduino Uno R4 WiFi（以下Arduino）で伝言ゲームを実装する通信システムの物理層の媒体として，音波で通信するシステムを提案する．
+具体的には，ビット列に変換したテキストを4つの音波の周波数（音の高さ）と2回の鳴る音でasciiコードに対応した8 bitを表し，他のArduinoに伝送する．
+周波数について，可聴域の中で16個に分け，それを4 bitに対応させる．
+音を鳴らす回数については，16個に分けた音を2回ならすことで，4 bit$\times$2回 = 8 bitで1文字分を表す．
+asciiコードは本来7 bitであるが，下位ビットの4 bit，2回音を鳴らすことに合わせて8 bitで表現する．
+
+\section{背景}
+近年では様々なデバイスが携帯端末と通信する近距離情報通信技術が注目されている\cite{ref:sound_audible}．
+この技術は主に電波の無線通信が利用されているが，限られた空間のみの通信などが目的の場合，壁や遮蔽物で遮断できる音波を使う方が有効なこともある．
+また，多くの携帯端末にはマイクとスピーカが搭載されていることが多く，特別な外部機器を用意することなく利用できる．
+電波が急激に減衰する水中などでは，音響通信が無線通信の主要な技術で，海中での無線通信では非常に実用的な手法である\cite{ref:sound_underwater}．
+
+\section{既存の技術}
+既存の技術の一つに，NTTドコモの音響OFDMがある\cite{ref:ofdm} \cite{ref:ofdm_docomo}．
+可聴帯域の音波を市販のスピーカやマイクで情報伝送が可能で，URLなどの簡単なテキストの情報を1$\sim$2 秒ほどで伝送できる．
+OFDM変調した音波をもともとの音データの周波数に合わせて調整することでノイズを軽減する．
+これにより二次元コードを読み込むようにテレビやラジオから特定のURLにアクセスするといったことが可能になる．
+
+\section{自分自身のアイデアと既存の技術との違い}
+音響OFDMでは複数の周波数の帯域から組み合わせて並列的に情報伝送を行うが，自分自身のアイデアでは数種類の周波数は使用するが，一度に必要なのは一つの周波数だけで情報伝送は逐次的なものである．
+また，既存の技術ではOFDM変調や伝送信号が不快に感じないような処理を行うため複雑性がますが，提案したアイデアは比較的単純で実装が容易と思われる．
+そして，1音$\times$2回が1文字に対応するため，関係ない音が混ざると適切にテキストを伝送できないといったノイズ耐性の弱さも挙げられる．
+
+\section{自分自身のアイデアの特徴}
+これらを踏まえ，提案したアイデアの特徴について示す．
+提案したアイデアはテキストを16種類の音を用いて表現する方法である．
+文字の符号化にはasciiコードを活用し，1つの文字は8 bitで表す．
+音を複数回鳴らすことで文字を表現するため構造は単純になり，近距離情報伝送に必要な入力，エンコード，変調，復調，デコードといったような処理は満たせるものである．
+
+\section{システム構築に必要な工程}
+ハードウェア面では，音を鳴らすためのスピーカとスピーカから出た音を入力するためのマイク，Arduinoを2台用意する．
+ソフトウェア面では，各音をasciiコードに対応させ，変換したビット列にデータの開始や終了，パケットを識別するためのヘッダやフッタを付与する必要がある．
+そして，マイクで受け取った音をビット列にデコードするための復調方式を実装する．
+復調方式にはフーリエ変換や特定の周波数の存在や個数を検出するGoertzelアルゴリズムなどが挙げられる\cite{ref:goertzel}．
+
+\pagenumbering{roman}
+\pagenumbering{arabic}
+\clearpage
+
+\begin{thebibliography}{5}
+
+  \bibitem{ref:sound_audible}
+  松岡 保静，可聴音を利用した近距離情報伝送技術，2016，筑波大学博士論文
+
+  \bibitem{ref:sound_underwater}
+  樹田 行弘，出口 充康，志村 拓也，水中音響通信技術の紹介，電子情報通信学会　通信ソサイエティマガジン，Vol.15，No.4，pp.271-283，2022
+
+  \bibitem{ref:ofdm}
+  松岡 保静，音響データ通信技術 : 音響OFDM(<小特集>携帯情報機器における音響技術)，日本音響学会誌，Vol.68，No.3，pp.143-147，2012
+
+  \bibitem{ref:ofdm_docomo}
+  NTTドコモ，報道発表資料「音響OFDM」技術を開発，\url{https://www.docomo.ne.jp/info/news_release/page/20060413.html}
+
+  \bibitem{ref:goertzel}
+  高橋 敬，岩村 雅一，南谷 和範，黄瀬 浩一，音を用いた3Dプリンターのフィラメント詰まりの頑健な検出，情報処理学会 研究報告自然言語処理，Vol.2021-NL-248，No.39，pp.1-6，2021-05-13
+\end{thebibliography}
+
+
+\end{document}
