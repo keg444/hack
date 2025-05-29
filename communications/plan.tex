@@ -1,0 +1,231 @@
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+\usepackage{float}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{url}
+
+\titleformat*{\section}{\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\makeatletter
+  \renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.4\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\makeatletter
+  % sectionの下マージンを小さく
+  \renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {0.1\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\renewcommand{\thesubsection}{\thesection-\arabic{subsection}.}
+
+
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-4.5truemm}
+\setlength{\oddsidemargin}{0.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+\newcolumntype{b}{!{\vrule width 1pt}}
+\newcommand{\bhline}{\noalign{\hrule height 1pt}}   
+
+
+\begin{document}
+提出日: 20xx年xx月xx日
+\begin{center}
+\huge{実験計画書}
+\end{center}
+\begin{flushright}
+\end{flushright}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{bp{15.5truecm}b}
+  \bhline
+  \large{\bf{}}
+  \\ \bhline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{技術的・社会的な背景とシステムの目的}\label{sec:intro}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{技術的・社会的な課題や要求}
+近年インターネットやスマートフォンの普及により情報の量は膨大となり，その流通も活発になっている\cite{1}．
+我々の生活の中でも，Wi-FiやBluetoothなどの無線通信技術を用いた情報の伝達は日常的に行われており，これらの技術によって離れた相手への情報伝達が可能となっている\cite{2}．
+こうした無線通信は現代社会を支える基盤の一つであり，その仕組みを理解することは極めて重要である．
+特に無線通信の基礎的な原理や応用方法を体験的に学ぶことは，情報技術への理解を深める上で有効なアプローチとなる．
+一方で，災害時や電波障害が発生した場合には，これらの無線通信手段が使えなくなる可能性がある．
+また，医療施設や飛行機内といった電波の使用が制限される環境では，そもそも通常の無線通信が困難である．
+このような状況下においても情報を確実に伝達する手段が求められており，物理的な通信方法の重要性が再認識されつつある\cite{2.5}．
+そこで本研究では，Arduinoを用いて無線または物理的な手法で情報を伝達するシステムを構築し，ディジタル伝言ゲームとしてその通信原理を学習することを目的とする．
+さらに，自身のアイデアを活かし，技術的な工夫を加えた通信手段の設計・実装を行い，災害時などの非常時通信にも応用可能なシステムの検討を行う．	
+	\\ \bhline
+\subsection{類似のシステム}
+現状，光を用いた通信伝達方法は，光ファイバー通信や赤外線通信，可視光線通信などが存在する．可視光線を使った無線通信技術では，Visible Light Communication (VLC)という物があり，LED照明を高速点滅させ，その光をフォトダイオードなどで受信しデータを伝送するというものである．IEEE802.15.7規格として標準化が進められており，数Mbps～数十Mbpsの通信が可能であるとされる\cite{3}.
+また，既存の技術の一つに，NTTドコモの音響OFDMがある\cite{ref:ofdm}\cite{ref:ofdm_docomo}．
+可聴帯域の音波を市販のスピーカやマイクで情報伝送が可能で，URLなどの簡単なテキストの情報を1$\sim$2 秒ほどで伝送できる．
+OFDM変調した音波をもともとの音データの周波数に合わせて調整することでノイズを軽減する．
+これにより二次元コードを読み込むようにテレビやラジオから特定のURLにアクセスするといったことが可能になる．
+また，振動を用いた通信伝達方法として，「Vinteraction」が挙げられる．
+この技術は情報送信元端末(スマートフォン)を情報送信先端末(タブレット)の上に置き，
+情報送信元端末側の振動モータを用いたバイブレーションと情報送信先の加速度センサを組み合わせることで，情報の送受信を可能としている．
+この技術では振動の有無で情報を送信しており，振動がない場合は0，振動がある場合は1として扱い，100ミリ秒毎に情報を送信している．
+この技術開発の結論に現状の送信速度は十分ではないが，送信自体は可能であり，小さな情報を送信する状況下ではこの技術が有効であることがわかる\cite{jiturei}．
+	 \\ \bhline
+\subsection{システムの目的と独自性}
+電波等の無線通信手段が制限される状況に対応するため，光，音，振動を利用した情報伝達通信方法を構築する．
+光による通信に関して，類似のシステムとは異なりLEDを複数用いることにより情報伝達をより効率的に行うという独立性を持つ．	
+そして音による通信に関して，音響OFDMでは複数の周波数の帯域から組み合わせて並列的に情報伝送を行うが，自分自身のアイデアでは数種類の周波数は使用するが，一度に必要なのは一つの周波数だけで情報伝送は逐次的なものである．
+また，スピーカとマイクを用いて音程の変化を利用した情報通信方法を構築する．
+既存の技術ではOFDM変調や伝送信号が不快に感じないような処理を行うため複雑性がますが，提案したアイデアは比較的単純で実装が容易と思われる．
+そして，1音$\times$2回が1文字に対応するため，関係ない音が混ざると適切にテキストを伝送できないといったノイズ耐性の弱さも挙げられる．
+そして振動による通信に関して，モータと加速度センサを用いて振動を利用した情報通信方法を構築する．
+バイブレーションは様々な機器ですでに実装されている機能であり，新たなデバイスや部品を増やすことなく既存の機器のみで通信を可能とする．
+	\\ \bhline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{システムの概要}\label{sec:about_system}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{システム全体の構成}
+	
+	\\ \bhline
+\subsection{1つ目の要素システムの構成}
+	
+	 \\ \bhline
+\subsection{2つ目の要素システムの構成}
+	
+	 \\ \bhline
+\subsection{$n$つ目の要素システムの構成}
+	
+	 \\ \bhline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{必要な作業}\label{sec:tasks}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{1つ目の要素システムを構築する作業}
+% 光を用いた通信システムでは，8個のLEDの色のパターンを利用してデータの送受信を行う．
+% このシステムはLEDを8個並べて全消灯から全点灯で8bitを表すため，各LEDに照度センサを対応させ，そのビット列を判断する．
+% まずArduinoにセンサを各ピンに接続し，LEDの光を受け取る回路を組む．
+% 次にセンサから光を受け取ると0または1を返すプログラムを作成し，8つのセンサの0または1の情報を結合してビット列に直す．
+% そして，直したビット列からasciiコードに対応した文字に変換する．
+% 	 \\ \bhline
+% \subsection{2つ目の要素システムを構築する作業}
+% 音を用いた通信システムでは，低いドから高いドまでの8つの音程を利用してデータの送受信を行う．
+% まず光の受信によって変換した文字をasciiコードから8bitのビット列に変換する．
+% このビット列を4bitずつ半分に分け，各4bitに対応した音を鳴らすことで1文字を表現する．
+% このために，Arduinoにスピーカを接続し，分けた4bitに対応する音を出力するプログラムを作成する
+\begin{itemize}
+  \item Arduinoと抵抗器，ダイナミックスピーカを接続し音波を出力可能な回路をブレッドボード上に組む
+    \begin{itemize}
+      \item Arduinoのデジタルピンと330 $\Omega$の抵抗器，ダイナミックスピーカーを直列に接続
+    \end{itemize}
+  \item 受信した数列に応じて音波を送信するプログラムを作成する
+    \begin{itemize}
+      \item 4 bitの4進数の数列を受信する
+      \item 17個の音程を用意し，1個は開始と終了の合図に，他の16個は受信した数列を2 bit $\times$ 2個に分けた各2 bitを表す為に設定する
+      \item 受信した数列に対応する音程（周波数）の音波をスピーカーから出力する
+    \end{itemize}
+  \item マイクと抵抗器，Arduinoを接続し音波を入力可能な回路をブレッドボード上に組む
+  \item 入力した音波の周波数を特定し，対応する数値を取得するプログラムを作成
+    \begin{itemize}
+      \item 受信した波の頂点を検知し，その周期から周波数を得る
+      \item 得た周波数に対応する数値（2 bit）を取得する
+    \end{itemize}
+  \item 取得した数値からテキストを復元
+\end{itemize}
+
+	 \\ \bhline
+\subsection{$n$つ目の要素システムの構成}
+
+	 \\ \bhline
+\subsection{全体のシステム(要素システムの結合)}
+	
+	\\ \bhline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{担当者割り当て}\label{sec:assignment}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{スケジュール}\label{sec:schedule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{必要な機材}\label{sec:equipment}
+\begin{itemize}
+  \item Arduino Uno R4 WiFi 1個
+  \item 照度センサ（フォトトランジスタ）560nmNJL7502L（貸出有）8個
+  \item ダイナミックスピーカ WYGD50D-8-03（貸出有）1個
+  \item ブレッドボード 1個
+  \item 抵抗器 9個
+\end{itemize}
+%\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{システムの評価指標と具体的な数値目標}\label{sec:evaluation}
+% 音の受信について，音がなってからLEDが点灯するまでの応答時間を1秒以下にすることを目標とする．
+% 人間がデータ入力をしてから応答があるまでにラグを感じずに作業できるためである\cite{ref:user_reaction}．
+光の受信について，照度センサが光を検知してテキストが出力されるまでにかかる時間を100 msに抑えることを目標とする．
+これはLEDの光の反射から傾斜角を計測する傾斜センサの応答時間が100msほどであるからである\cite{ref:keisha}．
+音の送信における評価指標として，通信距離を評価する．
+屋内でスピーカからのサイレン音をスマートフォンを用いて受信する実験では通信距離が10 mを超えても適切に通信が可能であると報告があり．今回の音程の差による通信において，通信可能距離を10 mを目標とする．
+
+\begin{thebibliography}{99}
+  % \bibitem{ref:user_reaction}
+  % Ben Shneiderman, Catherine Plaisant，Designing the User Interface: Strategies for Effective Human-Computer Interaction，Addison-Wesley，Vol.4，2004
+
+  % \bibitem{ref:kenchi}
+  % 水知 力，梅林 健太，Janne J. Lehtom\"\a ki，Miguel L\'opez-Bena\'\i tez，鈴木 康夫，周波数利用観測のための誤警報除去法のパラメータ設計に関する一検討，電子情報通信学会，2016
+
+  \bibitem{ref:keisha}
+  下尾 浩正，南部 幸久，寺村 正広，ニューラルネットワーク比較器を用いた傾斜センサによる応答時間の短縮，電気学会論文誌，Vol.139，No.9，pp.310-316，2019
+
+  \bibitem{ref:tone}
+  小嶋 徹也，鎌田 寛，Udaya PARAMPALLI，楽曲を用いた通信システム，東京工業高等専門学校研究報告書，No.49，2017
+  \bibitem{ref:tone2}
+  Youki Sada，Tetsuya Kojima，Improvement of Emergency Broadcasting System Based on Audio Data Hiding，IEICE Tech. Rep.，Vol.117，No.476，EMM2017-88，pp.55-60，2018．
+\end{thebibliography}
+\end{document}
