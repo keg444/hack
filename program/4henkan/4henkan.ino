@@ -18,11 +18,18 @@ void loop() {
     }
     
     //確認用
+    String s="";
+    int k;
     Serial.print("Base4: ");
     for (int i = 0; i < resultIndex; i++) {
       Serial.print(base4[i]);
+      s += String(base4[i]);
     }
     Serial.println("");
+    for(k=0; k<resultIndex; k+=2){
+      Serial.println(s.substring(k, k+2));
+    }
+    Serial.println("-------------------------");
   }
 }
 
