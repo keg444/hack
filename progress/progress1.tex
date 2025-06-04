@@ -1,0 +1,132 @@
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+\usepackage{float}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{url}
+
+\titleformat*{\section}{\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\makeatletter
+  \renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.4\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\makeatletter
+  % sectionの下マージンを小さく
+  \renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {0.1\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\renewcommand{\thesubsection}{\thesection-\arabic{subsection}.}
+
+
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-4.5truemm}
+\setlength{\oddsidemargin}{0.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+\newcolumntype{b}{!{\vrule width 1pt}}
+\newcommand{\bhline}{\noalign{\hrule height 1pt}}   
+
+
+\begin{document}
+提出日: 2025年5月27日
+\begin{center}
+\huge{進捗報告}
+\end{center}
+\begin{flushright}
+\end{flushright}
+% \begin{table}[H]
+%   \centering
+%   \begin{tabular}{bp{15.5truecm}b}
+%   \bhline
+%   \large{\bf{}}
+%   \\ \bhline
+% \end{tabular}
+% \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{進捗状況}
+第６回のプレゼンテーションでの質疑を受け，以下のことを変更した．
+\begin{itemize}
+    \item 災害時という社会的背景を鑑み，通信速度の評価指標を設定
+    \item 通信精度についてより現実的なものを採用
+\end{itemize}
+具体的には，速度については類似した実験の例から10bpsを目指す．
+シンボル長（音の長さ）を0.3 sにするとbpsが10.$\dot{6}$となる．
+精度については，同様の実験の例からBERが10\%となるように修正した．
+また，光受信，音送信ともまだ構築には至っていないため音送信について速やかに取り掛かる．
+
+\section{課題点}
+現状の問題としては以下のことが挙げられる．
+\begin{itemize}
+    \item 回路構築の材料調達
+    \item 照度センサを並べるときに対象外のLED光と干渉してしまわないか
+    \item スピーカー特性は16種類の周波数を出力するのに適しているか
+    \begin{itemize}
+        \item 既知でフラットな特性を持つマイクを用いて調査
+    \end{itemize}
+    \item 光と音を受信する際に閾値はどう設定するか    
+    \item 音を出力する際の干渉
+    \item 光受信，音送信の回路の電力は通常のmacの電源や電池で足りるのか
+\end{itemize}
+
+
+\section{連携する点}
+光を受信する際に指向性の強いLEDを使うのか，仕切りなどを用いて干渉しないように工夫するのか．
+光を受信してデコードするプログラムと4進数変換プログラムとの連携，結合．
+光の受信についての閾値の設定についても確認する．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{path}
+    \caption{caption}
+    \label{fig:label}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{path}
+    \caption{caption}}
+    \label{fig:label}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{path}
+    \caption{caption}
+    \label{fig:label}
+\end{figure}
+
+\cite{ref:}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{path}
+    \caption{caption}
+    \label{fig:label}
+\end{figure}
+
+\bibitem{ref:}
+author，title，journal，volume，number，year．

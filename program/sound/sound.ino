@@ -1,6 +1,6 @@
 const int speaker_pin = 3;  //スピーカー接続ピン
 unsigned long t = 300;  // 音を鳴らす時間(ms)
-unsigned long delayt = t * 0.25; // GI長(tの25%)
+unsigned long GI = t * 0.25; // GI長(tの25%)
 unsigned int freq[17] = {450, 650, 850, 1050, 1250, 1450, 1650, 1850, 2050, 2250, 2450, 2650, 2850, 3050, 3250, 3450, 3850}; //鳴らす周波数を設定（最低周波数を開始ビットに）
 char* str[16] = {"00","01","02","03","10","11","12","13","20","21","22","23","30","31","32","33"} ; // 取得した4進数2桁
 
@@ -34,9 +34,9 @@ void loop() {
           tone(speaker_pin, freq[l+1]);
           delay(t);
           noTone(speaker_pin);
-          delay(delayt);
-          Serial.print("frequency:");
-          Serial.println(freq[l]);
+          delay(GI);
+          // Serial.print("frequency:");
+          // Serial.println(freq[l]);
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-    "port": "/dev/tty.usbmodemF412FA63CEC02"
+    "port": "/dev/tty.usbmodemF412FA63CEC02",
     "output": "./build"
 
 }
