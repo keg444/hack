@@ -1,0 +1,90 @@
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+\usepackage{float}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{url}
+
+\titleformat*{\section}{\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\makeatletter
+  \renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.4\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\makeatletter
+  % sectionの下マージンを小さく
+  \renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {0.1\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\renewcommand{\thesubsection}{\thesection-\arabic{subsection}.}
+
+
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-4.5truemm}
+\setlength{\oddsidemargin}{0.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+\newcolumntype{b}{!{\vrule width 1pt}}
+\newcommand{\bhline}{\noalign{\hrule height 1pt}}   
+
+
+\begin{document}
+提出日: \today
+\begin{center}
+\huge{進捗報告}\vskip20pt
+\large{24G1051 久峩丈}
+\end{center}
+\begin{flushright}
+\end{flushright}
+% \begin{table}[H]
+%   \centering
+%   \begin{tabular}{bp{15.5truecm}b}
+%   \bhline
+%   \large{\bf{}}
+%   \\ \bhline
+% \end{tabular}
+% \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{第８週進捗状況}
+
+\begin{itemize}
+    \item FFTを用いた受信側プログラムの開発
+\end{itemize}
+予定していた周波数だと低周波の音の計測精度が悪く，5 cmほど離れると計測値の誤差が大きくなってしまった．
+そのため，出力する周波数をスピーカーの周波数特性の中で約90dB出る周波数から高周波な2050 Hz\~3750 Hzを100 Hz間隔に変更して実験を行った．
+2050 Hz\~2250 Hzまでは10 cmほど離しても正しく計測できることを確認した．
+それに関連してサンプリング周波数を8000 Hzに設定した．
+
+%------------------------------------------------%
+\section{課題点}
+\begin{itemize}
+    \item 授業外の環境だと音の通信が実施できなかったため，2PCで再度実験する
+    \item ポップノイズや周囲の音の急な変化への対策としてポップガードを付けるか検討する
+\end{itemize}
+
+
+\section{連携する点}
+前回に引き続き光受信→音送信の手順を整える．
+音の通信の実験によってサンプリング周波数と設定周波数を決定する．
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
