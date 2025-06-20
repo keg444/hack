@@ -1,13 +1,13 @@
 #include <arduinoFFT.h>
 
-const uint16_t samples = 128;               // FFTサンプル数
+const uint16_t samples = 256;               // FFTサンプル数
 const double samplingFrequency = 8000.0;  // サンプリング周波数約333Hz（3ms間隔）
 const uint8_t micPin = A0;                   // マイク入力ピン
 
-const double startSignalFreq = 450.0;        // 開始・終了信号の中心周波数
-const double freqTolerance = 100.0;          // 周波数許容幅±100Hz
-const double infoFreqMin = 650.0;             // 情報信号最低周波数
-const double infoFreqMax = 3850.0;            // 情報信号最高周波数
+const double startSignalFreq = 2050.0;        // 開始・終了信号の中心周波数
+const double freqTolerance = 30.0;          // 周波数許容幅±100Hz
+const double infoFreqMin = 2150.0;             // 情報信号最低周波数
+const double infoFreqMax = 3650.0;            // 情報信号最高周波数
 const int infoCount = 16;                     // 情報信号の個数（4進数2桁分）
 
 double vReal[samples];
@@ -46,8 +46,9 @@ void loop() {
       isStartSignalDetected = false;
     } else {
       if (freq >= infoFreqMin - freqTolerance && freq <= infoFreqMax + freqTolerance) {
-        double step = (infoFreqMax - infoFreqMin) / infoCount;
-        int index = (int)((freq - infoFreqMin + freqTolerance) / step);
+        double step = (infoFreqMax - infoFreqMin) / (infoCount - 1);
+        // int index = (int)((freq - infoFreqMin + freqTolerance) / step);
+        int index = (int)((freq - infoFreqMin + (step / 2)) / step);
         if (index >= 0 && index < infoCount && receivedCount < infoCount) {
           receivedQuads[receivedCount++] = index;
           Serial.print("Received quad: ");
@@ -57,7 +58,7 @@ void loop() {
     }
   }
 
-  delay(300);
+  // delay(300);
 }
 
 // FFTで周波数を検出
@@ -81,6 +82,7 @@ double detectFrequency() {
   }
   return (peakIndex * samplingFrequency) / samples;
 }
+
 
 // 4進数2桁×16個をまとめてASCII(7bit)に変換
 void convertQuadsToAscii(int quads[], int length, char &asciiChar) {

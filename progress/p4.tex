@@ -1,0 +1,77 @@
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+\usepackage{float}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{url}
+
+\titleformat*{\section}{\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\makeatletter
+  \renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.4\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\makeatletter
+  % sectionの下マージンを小さく
+  \renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {0.1\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\renewcommand{\thesubsection}{\thesection-\arabic{subsection}.}
+
+
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-4.5truemm}
+\setlength{\oddsidemargin}{0.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+\newcolumntype{b}{!{\vrule width 1pt}}
+\newcommand{\bhline}{\noalign{\hrule height 1pt}}   
+
+
+\begin{document}
+提出日: \today
+\begin{center}
+\huge{進捗報告}\vskip20pt
+\large{24G1051 久峩丈}
+\end{center}
+\begin{flushright}
+\end{flushright}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{第9週音通信進捗状況}
+光を受信→音を送信するプログラムは完成した．
+音送信→音受信のプログラムは未完成．
+音を受信して数列に変換することはできたが，返り値として変換しているので配列として扱えるように変更する．
+現時点での通信可能環境は，距離が約5 cm，速度が 10bps（音長300 ms）だった．
+
+\section{課題点}
+\begin{itemize}
+    \item テスト用に数列をデコードする際，同じ数列（文字）が連続すると文字化けしたものが間に入ってしまう
+    \item start，endシグナルを片方しか受け取れなかったときに毎回リセットする必要があるため，この際の処理を加える
+\end{itemize}
+
+\section{連携する点}
+
+テスト環境では音送信側がwindowsだったので，念の為Macでも同様に動作するか確認する．
+光の受信→音の送信→音の受信→振動の送信の流れができるかを確認する．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

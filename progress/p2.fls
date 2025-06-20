@@ -4,8 +4,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/euptex/platex.fmt
-INPUT progress3.tex
-OUTPUT progress3.log
+INPUT p2.tex
+OUTPUT p2.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
@@ -41,10 +41,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
-INPUT ./progress3.aux
-INPUT ./progress3.aux
-INPUT progress3.aux
-OUTPUT progress3.aux
+INPUT ./p2.aux
+INPUT ./p2.aux
+INPUT p2.aux
+OUTPUT p2.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -55,5 +55,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.t
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-OUTPUT progress3.dvi
-INPUT progress3.aux
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+OUTPUT p2.dvi
+INPUT p2.aux

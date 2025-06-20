@@ -1,17 +1,16 @@
 # Fdb version 4
-["dvipdf"] 1748869521.36245 "progress2.dvi" "progress2.pdf" "progress2" 1748869521.6532 0
-  "progress2.dvi" 1748869521.35079 3096 b15ac3edf13653d187766195c4a52b69 "latex"
+["dvipdf"] 1750082408.61499 "p4.dvi" "p4.pdf" "p4" 1750082408.88759 0
+  "p4.dvi" 1750082408.60395 1996 f911d349f985352a8dc38e819c855fe3 "latex"
   (generated)
-  "progress2.pdf"
+  "p4.pdf"
   (rewritten before read)
-["latex"] 1748869521.15885 "progress2.tex" "progress2.dvi" "progress2" 1748869521.65286 0
+["latex"] 1750082408.40958 "p4.tex" "p4.dvi" "p4" 1750082408.88731 0
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1463434352 856 7404843a5f798859944d7973a47821d5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1463434352 856 39c171483fe1bb7d0e1368980c0c205b ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
@@ -32,10 +31,10 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/euptex/platex.fmt" 1715781184 8157556 420e2e093d8d13ed8fb26ae99cc48004 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "progress2.aux" 1748869521.35021 459 d5a75ce229ebae4c51faaccecd170055 "latex"
-  "progress2.tex" 1748869520.3248 4043 0634b9ff3bf0be12972d89139fc65145 ""
+  "p4.aux" 1750082408.60355 348 3ab56a1093e18a3b094ba042cbd7bdc9 "latex"
+  "p4.tex" 1750082188.91785 2577 6179f05ec999fd84d06cedd0d8173bd3 ""
   (generated)
-  "progress2.aux"
-  "progress2.dvi"
-  "progress2.log"
+  "p4.aux"
+  "p4.dvi"
+  "p4.log"
   (rewritten before read)
