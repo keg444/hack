@@ -1,0 +1,33 @@
+\section{Arduinoのスケッチ}
+作成したArduinoのスケッチを以下に示す．
+
+
+\begin{lstlisting}
+1:	// 光センサによる居眠り検知システム（Doze-detection system using optical sensors）
+2:	#define USE_ARDUINO_INTERRUPTS true  
+3:	#include <PulseSensorPlayground.h>  
+4:	const int SENSOR_A = 0;//環境光(部屋の明るさ)
+5:	const int SENSOR_B = 1;//頭の動きを検知
+6:	const int SENSOR_Pulse = 2;//心拍を検知
+7:	const int IN1 = 10;//モータ
+8:	const int IN2 = 9;//モータ
+9:	const int check_range = 50;//センサーの値をチェックする範囲，つまり配列の大きさ 5秒間
+10:	const int A_dif = 2;//光センサAの値が一定になったと判別する際に用いる変数
+11:	const int Night_Mode_Value = 15;//夜モードになるための閾値
+12:	const float Judgment_Value = 4;//居眠りと判定するための変数　通常は環境光/3が頭の影（自宅環境）
+13:	
+14:	PulseSensorPlayground pulseSensor;
+15:	
+16:	int Data_A[check_range] = {0};
+17:	int Data_B[check_range] = {0};
+18:	int Data_IBI[check_range] = {0};//心拍間隔時系列
+19:	int Data_Pulse;
+20:	int Ambient_Light = 55;//居眠り判定の際に用いる環境光の値，Data_A[]の平均値
+21:	int Night_Mode = 0;//夜モードがどうかのスイッチ　1で夜モード
+22:	int State = 0;//居眠りになったら1
+23:	int myBPM = 0;
+24:	int Threshold = 550; // どの信号を「心拍」としてカウントするか、またどの信号を無視するかを決定する
+25:	int count_time = 0; //カウントするために用いられる変数
+26:	int Data_B_var = 120;//光センサBの分散
+〜〜〜以降，本サンプルでは省略〜〜〜
+\end{lstlisting}

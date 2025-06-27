@@ -1,4 +1,4 @@
-const int photoTransistorPin = A4; // フォトトランジスタが接続されるアナログピン
+const int photoTransistorPin = A2; // フォトトランジスタが接続されるアナログピン
 
 void setup() {
   Serial.begin(9600);              // シリアル通信を開始

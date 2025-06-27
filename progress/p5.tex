@@ -1,0 +1,119 @@
+\documentclass[a4j,11pt,dvipdfmx]{jsarticle}
+\usepackage{float}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{url}
+
+\titleformat*{\section}{\bfseries}
+\titleformat*{\subsection}{\bfseries}
+
+\makeatletter
+  \renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.4\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\makeatletter
+  % sectionの下マージンを小さく
+  \renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {0.1\Cvs}{0.1\Cvs}%
+    {\normalfont\headfont\raggedright}}
+\makeatother
+
+\renewcommand{\thesubsection}{\thesection-\arabic{subsection}.}
+
+
+%---------------------------------------------------
+% ページの設定
+%---------------------------------------------------
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{250truemm}
+\setlength{\topmargin}{-4.5truemm}
+\setlength{\oddsidemargin}{0.5truemm}
+\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\parindent}{1zw}
+\newcolumntype{b}{!{\vrule width 1pt}}
+\newcommand{\bhline}{\noalign{\hrule height 1pt}}   
+
+
+\begin{document}
+提出日: \today
+\begin{center}
+\huge{システム評価のためのテスト項目}\\
+\large{24G1051 久峩 丈}
+\end{center}
+\begin{flushright}
+\end{flushright}
+% \begin{table}[H]
+%   \centering
+%   \begin{tabular}{bp{15.5truecm}b}
+%   \bhline
+%   \large{\bf{}}
+%   \\ \bhline
+% \end{tabular}
+% \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{部門における評価指標・テスト実施方法}\label{sec:intro}
+\begin{table}[H]
+\vspace{-1em}
+\centering
+\begin{tabular}{bp{15.5truecm}b}
+\bhline
+\subsection{部門名}
+音通信
+
+\\ \bhline
+\subsection{評価内容概要}
+\begin{itemize}
+    \item 通信精度，通信速度，通信距離
+\end{itemize}
+本システムを通信精度，通信速度，通信距離の3点で評価する．
+各評価の目標，方法は以下の通りである．
+\\ \bhline
+\subsection{評価指標}
+\begin{itemize}
+    \item 通信精度: $BER = 10^{-1}$
+    \item 通信速度: bps $\geq$ 10
+    \item 通信距離: 10 m以上
+\end{itemize}
+各評価指標について，それぞれ以上のものを目標として評価する．
+また，BERはビット誤り率である．
+
+\\ \bhline
+\subsection{評価実施方法・手順}
+通信精度
+\begin{enumerate}
+    \item 初めに送信する文字を外部ツールを使って4進数に変換しておく
+    \item 受信した4進数生データと1．を比較してBERを算出する
+\end{enumerate}
+通信速度
+\begin{enumerate}
+    \item 初めに送信する文字を外部ツールを使って2進数に変換しておく
+    \item 音が鳴り始めたら時間を測定開始
+    \item 受信終了（"----- End receiving -----"のシリアル出力）したら測定終了
+    \item 測定時間と1．からbpsを計算する
+\end{enumerate}
+通信距離
+\begin{enumerate}
+    \item スピーカーとマイクの距離を0cmから1cmずつ離していく
+    \item BER $\geq$ 10を保てる距離で最大のものを通信可能距離とする
+\end{enumerate}
+\\ \bhline
+
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

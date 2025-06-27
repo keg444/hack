@@ -2,8 +2,8 @@
 const int speaker_pin = 3;  //スピーカー接続ピン
 unsigned long t = 300;  // 音を鳴らす時間(ms)
 unsigned long GI = t * 0.30; // GI長(tの25%)
-unsigned int freq[16] = {1950, 2050, 2150, 2250, 2350, 2450, 2550, 2650, 2750, 2850, 2950, 3050, 3150, 3250, 3350, 3450};//鳴らす周波数を設定（最低周波数を開始ビットに）
-unsigned int sfreq = 3550;
+unsigned int freq[16] = {2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500};//鳴らす周波数を設定（最低周波数を開始ビットに）
+unsigned int sfreq = 3600;
 String str[16] = {"00","01","02","03","10","11","12","13","20","21","22","23","30","31","32","33"} ; // 取得した4進数2桁
 
 // const int maxmoji = 256 * 4;  // 最大文字数256文字分（ASCII）×4桁
@@ -58,6 +58,7 @@ void loop() {
         }
       }
     }
+    delay(GI);
 
     tone(speaker_pin, sfreq); // 終了用の周波数を出力
     delay(t);
@@ -75,7 +76,7 @@ void loop() {
       s += String(base4[i]);
     }
     Serial.println("");
-    for (int l=0; l<resultIndex; l+=2){ // 前から2桁ずつ音を鳴らす
+    for (int l=0; l<resultIndex; l+=2){
       for (int m=0; m<16; m++){
         if(s.substring(l, l+2) == str[m]){
           String foo = s.substring(l, l+2);

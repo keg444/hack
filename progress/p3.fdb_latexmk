@@ -1,10 +1,10 @@
 # Fdb version 4
-["dvipdf"] 1750082401.63032 "p3.dvi" "p3.pdf" "p3" 1750082401.93927 0
-  "p3.dvi" 1750082401.61935 2064 46892a0b70d0118dadc7af4a3afa8475 "latex"
+["dvipdf"] 1750606296.90302 "p3.dvi" "p3.pdf" "p3" 1750606297.21713 0
+  "p3.dvi" 1750606296.89153 2104 a50a6706009b051087dd6bc4bb0f5575 "latex"
   (generated)
   "p3.pdf"
   (rewritten before read)
-["latex"] 1750082401.42468 "p3.tex" "p3.dvi" "p3" 1750082401.93889 0
+["latex"] 1750606296.69526 "p3.tex" "p3.dvi" "p3" 1750606297.21682 0
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -31,8 +31,8 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/euptex/platex.fmt" 1715781184 8157556 420e2e093d8d13ed8fb26ae99cc48004 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "p3.aux" 1750082401.61896 341 c1fa04cdeaca11733fd40ecf5b352c34 "latex"
-  "p3.tex" 1749480176.40458 2854 00b9796854b071304b53ddf04d0c36a5 ""
+  "p3.aux" 1750606296.89116 341 c1fa04cdeaca11733fd40ecf5b352c34 "latex"
+  "p3.tex" 1750606294.39337 2858 8367b00137d294d44eb119872ac8eebd ""
   (generated)
   "p3.aux"
   "p3.dvi"

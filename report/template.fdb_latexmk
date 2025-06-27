@@ -1,0 +1,25 @@
+# Fdb version 4
+["dvipdf"] 0 "template.dvi" "template.pdf" "template" 0 -1
+  "template.dvi" 0 -1 0 "latex"
+  (generated)
+  "template.pdf"
+  (rewritten before read)
+["latex"] 1750860207.04959 "template.tex" "template.dvi" "template" 1750860207.29263 2
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/everyhook/everyhook.sty" 1417130005 5531 6783cc7ca14ebcec881a109a07e02d11 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/jlreq/jlreq-helpers.sty" 1707868109 21198 4561cb0e83239e0adc8e4f204ae00bdf ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/jlreq/jlreq.cls" 1708117615 290095 f69cfb655680baf9aeb165ff5ecfdc94 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def" 1708463273 29970 47025554fcc2f3f1287c3fb073711f3c ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty" 1708463273 6565 10e89ed128ccd59431746bbdd82129fc ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1708376303 4674 4240ebde863d19dc4d13bb280b78abb2 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/svn-prov/svn-prov.sty" 1272330018 6852 44ea8d7e58290cde708a34ebf3953571 ""
+  "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
+  "/usr/local/texlive/2024/texmf-var/web2c/euptex/platex.fmt" 1715781184 8157556 420e2e093d8d13ed8fb26ae99cc48004 ""
+  "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
+  "template.aux" 1750860207.04912 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "template.tex" 1750859275.18298 872 2ece56cf1f0b0c4a1159a3950aee23d4 ""
+  (generated)
+  "template.aux"
+  "template.dvi"
+  "template.log"
+  (rewritten before read)

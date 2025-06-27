@@ -1,0 +1,43 @@
+\documentclass[uplatex,dvipdfmx]{jlreq}
+
+\input{pckgs.sty}
+\usepackage{hira-stix} % ヒラギノフォント＆STIX2 代替フォント定義（Warning回避）
+
+\begin{document}
+
+\begin{titlepage}
+\vspace*{2cm}
+\centering
+\Huge\textsf{Arduinoと光センサを用いた\\居眠り検知・防止装置}\\[2cm]
+\Large\textsf{情報工学科 2年}\\
+\Large\textsf{24G1000}\\[5pt]
+\huge\textsf{工大 太郎}
+
+\vspace*{1cm}
+\Large\sffamily
+\begin{itembox}[c]{チーム116}
+\centering
+\begin{tabular}{ll}
+工大 二郎（24G1001）&
+工大 三郎（24G1002）\\
+工大 四郎（24G1003）&
+工大 五郎（24G1004）\\
+\end{tabular}
+\end{itembox}
+
+\vspace*{2cm}
+\Large\textsf{\today}
+\end{titlepage}
+\clearpage
+
+%% 以降本文
+\input{sect1}
+\input{sect2}
+\input{sect3}
+\input{sect4}
+\input{sect5}
+\input{sect6}
+\input{biblio}
+\appendix
+\input{apndx}
+\end{document} 

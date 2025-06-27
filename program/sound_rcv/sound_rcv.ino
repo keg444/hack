@@ -58,7 +58,7 @@ void loop() {
     }
   }
 
-  // delay(300);
+  delay(300);
 }
 
 // FFTで周波数を検出

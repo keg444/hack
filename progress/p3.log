@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.5.15)  16 JUN 2025 23:00
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.5.15)  23 JUN 2025 00:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -151,6 +151,14 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 65.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 65.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 71.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 71.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 71.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 71.
  [1
 
 ] (./p3.aux)
@@ -161,12 +169,12 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1617 strings out of 474774
- 24892 string characters out of 5758801
+ 1619 strings out of 474774
+ 24920 string characters out of 5758801
  1922032 words of memory out of 5000000
- 24016 multiletter control sequences out of 15000+600000
- 564881 words of font info for 68 fonts, out of 8000000 for 9000
+ 24018 multiletter control sequences out of 15000+600000
+ 565065 words of font info for 70 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  57i,5n,65p,200b,162s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on p3.dvi (1 page, 2064 bytes).
+Output written on p3.dvi (1 page, 2104 bytes).

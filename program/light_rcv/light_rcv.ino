@@ -4,6 +4,8 @@ int resultIndex = 0;
 
 const int detectPin = A4; // A4の光（送信中）を検出
 const int dataPins[4] = {A0, A1, A2, A3}; // データ光（0〜3）を検出
+const int readtime = 50;
+const int threshold = 50;
 
 bool inReceiving = false; // 現在受信中かどうか
 
@@ -18,14 +20,14 @@ void setup() {
 void loop() {
   int detectValue = analogRead(detectPin);
 
-  if (detectValue > 500) {
+  if (detectValue > threshold) {
     // 送信中
     if (!inReceiving) {
       resultIndex = 0;      // 初回のみ初期化
       inReceiving = true;
     }
 
-    int val = detectBitByDuration(50);  // 50msごとの読み取り
+    int val = detectBitByDuration(readtime);  // 50msごとの読み取り
     if (val != -1) {
       base4[resultIndex++] = val;
     }
@@ -46,10 +48,11 @@ void loop() {
 int detectBitByDuration(int durationMs) {
   int lightDetected[4] = {0, 0, 0, 0};
   unsigned long start = millis();
+  int eps = 50;
 
   while (millis() - start < durationMs) {
     for (int i = 0; i < 4; i++) {
-      if (analogRead(dataPins[i]) > 500) {  // 光を検出したらカウント
+      if (analogRead(dataPins[i]) > eps) {  // 光を検出したらカウント
         lightDetected[i]++;
       }
     }

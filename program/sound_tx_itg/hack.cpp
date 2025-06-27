@@ -1,4 +1,4 @@
-#include <hack.h>
+#include "hack.h"
 
 int detectBitByDuration(int durationMs) {
   int lightDetected[4] = {0, 0, 0, 0};

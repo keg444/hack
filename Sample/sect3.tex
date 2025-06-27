@@ -1,0 +1,108 @@
+\section{スケジュールと担当}
+
+本システムは，光センサによる居眠り検知と脈拍センサによる居眠り推定法部分の2つ部分の実装が必要になる．
+ここでは，光センサによる居眠り検知をタスクA，脈拍センサによる居眠り推定法をタスクBとして，
+タスクAは，事前実験と検証（A-1），光量差による居眠り検知のプログラミング（A-2），タスクBは，
+Check\_F\_stress()関数の実装（B-1），Check\_DataA\_Variation()関数の実装（B-2），
+Check\_DataB()関数の実装（B-3），loop()関数の実装（B-4），回路製作と外装（タスクC），最終調整（タスクD）として，それぞれ図\ref{gantt1}に示す担当で進めることとした．
+報告者はタスクA-1，A-2，C，Dを担当した．
+\begin{figure}[tb]
+    \begin{center}
+    \begin{ganttchart}[y unit title=0.4cm,
+    y unit chart=0.5cm,
+    vgrid,hgrid, 
+    title label anchor/.style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    progress label text={},
+    bar height=0.7,
+    group right shift=0,
+    group top shift=.6,
+    group height=.3]{1}{24}
+    %labels
+    \gantttitle{8 Weeks}{24} \\
+    \gantttitle{W1}{3} 
+    \gantttitle{W2}{3} 
+    \gantttitle{W3}{3} 
+    \gantttitle{W4}{3} 
+    \gantttitle{W5}{3} 
+    \gantttitle{W6}{3} 
+	\gantttitle{W7}{3} 
+	\gantttitle{W8}{3}\\
+    %tasks
+    \ganttbar{Task A-1/佐波}{1}{4} \\%elem0
+    \ganttbar{Task A-2/佐波}{5}{10} \\%elem1
+    \ganttbar{Task B-1/有本}{1}{8} \\%elem2
+    \ganttbar{Task B-2/関根}{1}{9} \\%elem3
+    \ganttbar{Task C/佐波}{12}{18} \\%elem4
+    \ganttbar{Task B-3/有本}{10}{19} \\%elem5
+    \ganttbar{Task B-4/関根}{11}{18} \\%elem6
+    \ganttbar{Task D/全員}{21}{24}%elem7
+    
+    %relations 
+    \ganttlink{elem0}{elem1} 
+    \ganttlink{elem1}{elem4} 
+    \ganttlink{elem2}{elem5} 
+    \ganttlink{elem3}{elem6} 
+%    \ganttlink{elem1}{elem5} 
+%    \ganttlink{elem3}{elem4} 
+    \ganttlink{elem4}{elem7} 
+    \ganttlink{elem5}{elem7} 
+    \ganttlink{elem6}{elem7} 
+    \end{ganttchart}
+    \end{center}
+    \caption{計画時のスケジュール}
+	\label{gantt1}
+\end{figure}
+
+ただし，実際の作業では，タスクCにおける材料の調達に時間がかかり，製作の開始時期が遅れたことから，センサ機構の外装部分まで手が回らず剥き出しのままの実装となった．実際の進捗は，図\ref{gantt2}の通りとなった．プロジェクトのスケジュール立案時には，材料の調達期間を考慮する必要性があることを身をもって知ることができたため，この経験は今後に活かしたい．
+\begin{figure}[tb]
+    \begin{center}
+    \begin{ganttchart}[y unit title=0.4cm,
+    y unit chart=0.5cm,
+    vgrid,hgrid, 
+    title label anchor/.style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    progress label text={},
+    bar height=0.7,
+    group right shift=0,
+    group top shift=.6,
+    group height=.3]{1}{24}
+    %labels
+    \gantttitle{8 Weeks}{24} \\
+    \gantttitle{W1}{3} 
+    \gantttitle{W2}{3} 
+    \gantttitle{W3}{3} 
+    \gantttitle{W4}{3} 
+    \gantttitle{W5}{3} 
+    \gantttitle{W6}{3} 
+	\gantttitle{W7}{3} 
+	\gantttitle{W8}{3}\\
+    %tasks
+    \ganttbar{Task A-1/佐波}{1}{4} \\%elem0
+    \ganttbar{Task A-2/佐波}{5}{10} \\%elem1
+    \ganttbar{Task B-1/有本}{1}{8} \\%elem2
+    \ganttbar{Task B-2/関根}{1}{9} \\%elem3
+    \ganttbar[progress=66]{Task C/佐波}{15}{21} \\%elem4
+    \ganttbar{Task B-3/有本}{10}{19} \\%elem5
+    \ganttbar{Task B-4/関根}{11}{18} \\%elem6
+    \ganttbar[progress=86]{Task D/全員}{21}{24}%elem7
+    
+    %relations 
+    \ganttlink{elem0}{elem1} 
+    \ganttlink{elem1}{elem4} 
+    \ganttlink{elem2}{elem5} 
+    \ganttlink{elem3}{elem6} 
+%    \ganttlink{elem1}{elem5} 
+%    \ganttlink{elem3}{elem4} 
+    \ganttlink{elem4}{elem7} 
+    \ganttlink{elem5}{elem7} 
+    \ganttlink{elem6}{elem7} 
+    \end{ganttchart}
+    \end{center}
+    \caption{実際のスケジュール}
+	\label{gantt2}
+\end{figure}
