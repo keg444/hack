@@ -12,7 +12,7 @@ Arduino IDE のシリアルモニタに文字を入力し，7 bit asciiコード
 同期LEDの光を受け取らなくなったら通信を終了する．
 
 
-\begin{figure}[bt]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../img/compo_l}
     \caption{光通信の構成図と動作}
@@ -31,7 +31,7 @@ Arduino IDE のシリアルモニタに文字を入力し，7 bit asciiコード
 同期周波数をもう一度検出すると通信を終了する．
 
 
-\begin{figure}[bt]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../img/compo_s}
     \caption{音通信の構成図と動作}
@@ -42,14 +42,15 @@ Arduino IDE のシリアルモニタに文字を入力し，7 bit asciiコード
 \subsubsection{出力する周波数とその検出}
 送信側において，受け取った4進数の2桁と周波数と同期周波数の対応を表\ref{table:freq}に示す．
 構想段階では同期周波数は1950 Hzだったが，環境音によって意図せず通信を開始，終了することがあったため，環境の影響を受けにくい3.6 kHzに変更した．
+\par
 音と音の間に無音の時間（ガードインターバル：GI）を設ける．
 これは隣り合うシンボルの干渉（シンボル間干渉：ISI）を軽減，防止するもので，GIをシンボル長の25 \%にすることで最低限の時間でISIを防ぎ，効率のよい通信が可能となる\cite{ref:gi}．
 実際には，出力する音の長さを300 ms，GIを音長の25 \%に設定した．
 受信側において，周波数の検出はarduinoFFTライブラリ（\url{https://github.com/kosme/arduinoFFT}）を用いて行った．
-\begin{table}[bt]
+\begin{table}[htbp]
     \centering
     \caption{受け取るシンボルと周波数の対応}
-    \label{}
+    \label{table:freq}
     \begin{tabular}{ccc} \hline
         シンボル（2桁） &周波数[kHz] \\ \hline
         同期周波数 &3.6 \\ \hline
@@ -75,19 +76,27 @@ Arduino IDE のシリアルモニタに文字を入力し，7 bit asciiコード
 %----------------------------------------
 \subsection{振動モータを用いた振動通信}
 \subsubsection{システムの概要}
+振動通信の構成図と動作の流れを図\ref{fig:compo_v}に示す．
 振動が7回連続したら通信を開始する．
 音通信で受信した4進数の数列を7 bitのasciiコードに変換する．
 変換したら各桁が0だったら振動をオフ，1だったら振動をオンにすることによって数列を送信する．
 加速度センサによって3軸の加速度のベクトル距離を検知し，これが閾値を超えたら振動を検出する．
 この振動の有無の検出により，振動を2進数に変換し，asciiコードを用いて具体的な文字にデコードする．
+
+\begin{figure}[bt]
+    \centering
+    \includegraphics[width=\textwidth]{../img/compo_v}
+    \caption{振動通信の構成図と動作}
+    \label{fig:compo_v}
+\end{figure}
+
+
 % -------------------------------------------------------------------------------------------
 \subsection{システムの実装}
 \subsubsection{使用した機器}
 本システムに使用した機器を表\ref{table:devices}に示す．
 
-
-
-\begin{table}[bt]
+\begin{table}[ht]
     \centering
     \caption{使用した機器}
     \label{table:devices}
@@ -113,57 +122,58 @@ Arduino IDE のシリアルモニタに文字を入力し，7 bit asciiコード
 
 
 \subsubsection{回路図とフローチャート}
-各通信の回路図を図\ref{fig:circuit_l}，図\ref{fig:circuit_ls}，図\ref{fig:circuit_sv}，図\ref{fig:circuit_v}に，フローチャートを図\ref{fig:flow_l}図\ref{fig:flow_ls}図\ref{fig:flow_sv}図\ref{fig:flow_v}に示す．
+光の送信，光の受信から音の送信，音の受信から振動の送信，振動の受信をする回路図を図\ref{fig:circuit_l}，図\ref{fig:circuit_ls}，図\ref{fig:circuit_sv}，図\ref{fig:circuit_v}に，フローチャートを図\ref{fig:flow_l}，図\ref{fig:flow_ls}，図\ref{fig:flow_sv}，図\ref{fig:flow_v}に示す．
 
 
-\begin{figure}[bt]
+\begin{figure}[t]
     \centering
     \includegraphics[width=120mm]{../img/circuit/ltx.pdf}
     \caption{光送信の回路図}
     \label{fig:circuit_l}
 \end{figure}
-\begin{figure}[bt]
+\begin{figure}[htbp]
     \centering
     \includegraphics[height=\textheight]{../img/flow_ltx-1.pdf}
     \caption{光送信のフローチャート}
     \label{fig:flow_l}
 \end{figure}
 
-\begin{figure}[bt]
+\begin{figure}[t]
     \centering
     \includegraphics[width=120mm]{../img/circuit/lrcv_stx.pdf}
     \caption{光受信から音送信の回路図}
     \label{fig:circuit_ls}
 \end{figure}
-\begin{figure}[bt]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textheight]{../img/flow_stx-1.pdf}
+    \includegraphics[height=\textheight]{../img/flow_stx-1.pdf}
     \caption{光受信から音送信のフローチャート}
     \label{fig:flow_ls}
 \end{figure}
 
-\begin{figure}[bt]
+\begin{figure}[t]
     \centering
     \includegraphics[width=120mm]{../img/circuit/srcv_vtx.pdf}
     \caption{音受信から振動送信の回路図}
     \label{fig:circuit_sv}
 \end{figure}
-\begin{figure}[bt]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textheight]{../img/flow_vtx-1.pdf}
+    \includegraphics[height=\textheight]{../img/flow_vtx-1.pdf}
     \caption{音受信から振動送信のフローチャート}
     \label{fig:flow_sv}
 \end{figure}
 
-\begin{figure}[bt]
+\begin{figure}[t]
     \centering
     \includegraphics[width=120mm]{../img/circuit/vrcv.pdf}
     \caption{振動送信の回路図}
     \label{fig:circuit_v}
-\end{figure}\begin{figure}[bt]
+\end{figure}
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textheight]{../img/flow_vrcv-1.pdf}
-    \caption{光送信のフローチャート}
+    \includegraphics[height=\textheight]{../img/flow_vrcv-1.pdf}
+    \caption{振動送信のフローチャート}
     \label{fig:flow_v}
 \end{figure}
 
@@ -181,3 +191,4 @@ Arduino IDE のシリアルモニタに文字を入力し，7 bit asciiコード
     一定時間内に振動の有無を判断，2進数データに変換し保存する．
 \end{description}
 
+\clearpage

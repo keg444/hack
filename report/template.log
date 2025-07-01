@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 02:05
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 08:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,6 +1254,41 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count348
+\float@exts=\toks46
+\float@box=\box106
+\@float@everytoks=\toks47
+\@floatcapt=\box107
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen310
+\ESO@tempdimb=\dimen311
+)
+\AM@pagewidth=\dimen312
+\AM@pageheight=\dimen313
+\AM@fboxrule=\dimen314
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfpages/ppdvipdfmx.def
+File: ppdvipdfmx.def 2024/01/21 v0.5y Pdfpages driver for dvipdfmx (AM)
+)
+\pdfpages@includegraphics@status=\count349
+\AM@pagebox=\box108
+\AM@global@opts=\toks48
+\AM@pagecnt=\count350
+\AM@toc@title=\toks49
+\AM@lof@heading=\toks50
+\c@AM@survey=\count351
+\AM@templatesizebox=\box109
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
@@ -1298,11 +1333,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count348
+\c@section@level=\count352
 )
-\@linkdim=\dimen310
-\Hy@linkcounter=\count349
-\Hy@pagecounter=\count350
+\@linkdim=\dimen315
+\Hy@linkcounter=\count353
+\Hy@pagecounter=\count354
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
@@ -1312,7 +1347,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count351
+\Hy@SavedSpaceFactor=\count355
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
@@ -1332,9 +1367,9 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count352
+\c@Hy@tempcnt=\count356
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen311
+\XeTeXLinkMargin=\dimen316
  (/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -1342,9 +1377,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count353
-\Field@Width=\dimen312
-\Fld@charsize=\dimen313
+\Fld@menulength=\count357
+\Field@Width=\dimen317
+\Fld@charsize=\dimen318
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -1357,19 +1392,19 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count354
-\c@Item=\count355
-\c@Hfootnote=\count356
+\Hy@abspage=\count358
+\c@Item=\count359
+\c@Hfootnote=\count360
 )
 Package hyperref Info: Driver: hdvipdfm.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hdvipdfm.def
 File: hdvipdfm.def 2024-01-20 v7.01h Hyperref driver for dvipdfm
-\pdfm@box=\box106
-\c@Hy@AnnotLevel=\count357
-\HyField@AnnotCount=\count358
-\Fld@listcount=\count359
-\c@bookmark@seq@number=\count360
+\pdfm@box=\box110
+\c@Hy@AnnotLevel=\count361
+\HyField@AnnotCount=\count362
+\Fld@listcount=\count363
+\c@bookmark@seq@number=\count364
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -1386,8 +1421,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip66
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 21.
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 Package: pxjahyper 2023/03/01 v1.3
 
@@ -1408,27 +1443,27 @@ File: pxjahyper-uni.def 2023/03/01 v1.3
 Package pxjahyper Info: The setup for hyperref 'unicode' is applied.
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count361
-\lst@gtempboxa=\box107
-\lst@token=\toks46
-\lst@length=\count362
-\lst@currlwidth=\dimen314
-\lst@column=\count363
-\lst@pos=\count364
-\lst@lostspace=\dimen315
-\lst@width=\dimen316
-\lst@newlines=\count365
-\lst@lineno=\count366
-\lst@maxwidth=\dimen317
+\lst@mode=\count365
+\lst@gtempboxa=\box111
+\lst@token=\toks51
+\lst@length=\count366
+\lst@currlwidth=\dimen319
+\lst@column=\count367
+\lst@pos=\count368
+\lst@lostspace=\dimen320
+\lst@width=\dimen321
+\lst@newlines=\count369
+\lst@lineno=\count370
+\lst@maxwidth=\dimen322
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count367
-\lst@skipnumbers=\count368
-\lst@framebox=\box108
+\c@lstnumber=\count371
+\lst@skipnumbers=\count372
+\lst@framebox=\box112
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
@@ -1437,7 +1472,7 @@ Package: listings 2024/02/21 1.10 (Carsten Heinz)
 
 (./plistings.sty
 Package: plistings 2020-03-24 v0.14 Japanese support of listings package
-\ltj@lst@frame@lslimit=\dimen318
+\ltj@lst@frame@lslimit=\dimen323
 \lst@inputfile=\read3
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1505,17 +1540,28 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-\c@mv@tabular=\count369
-\c@mv@boldtabular=\count370
+\c@mv@tabular=\count373
+\c@mv@boldtabular=\count374
 LaTeX Info: Command `\dddot' is already robust on input line 6.
 LaTeX Info: Command `\ddddot' is already robust on input line 6.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.st
+y
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)))
 Package hyperref Info: Link coloring ON on input line 6.
 
 (./template.out) (./template.out)
 \@outlinefile=\write4
 \openout4 = `template.out'.
 
-\c@lstlisting=\count371
+\c@lstlisting=\count375
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
 (Font)              scaled to size 25.0pt on input line 11.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
@@ -1535,57 +1581,130 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
 (Font)              scaled to size 25.0pt on input line 11.
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 12.
+(Font)              scaled to size 14.0pt on input line 14.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 12.
+(Font)              scaled to size 14.0pt on input line 14.
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 12.
+(Font)              scaled to size 14.0pt on input line 14.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 12.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 12.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 14.0pt on input line 12.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 20.0pt on input line 14.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 20.0pt on input line 14.
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 20.0pt on input line 14.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 20.0pt on input line 14.
+(Font)              scaled to size 14.0pt on input line 14.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
 (Font)              `T1/Roboto-LF/regular/n' on input line 14.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 20.0pt on input line 14.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 20.
+(Font)              scaled to size 14.0pt on input line 14.
+LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
+(Font)              scaled to size 20.0pt on input line 16.
+LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
+(Font)              scaled to size 20.0pt on input line 16.
+LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
+(Font)              scaled to size 20.0pt on input line 16.
+LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
+(Font)              scaled to size 20.0pt on input line 16.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 16.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 20.0pt on input line 16.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 22.
 LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input l
-ine 20.
+ine 22.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
 File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
 )
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 20.
+(Font)              scaled to size 14.0pt on input line 22.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.79996pt on input line 20.
+(Font)              scaled to size 9.79996pt on input line 22.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 20.
+(Font)              scaled to size 7.0pt on input line 22.
 LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input 
-line 20.
+line 22.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
 File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definition
 s
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input li
-ne 20.
+ne 22.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
 File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitio
 ns
 )
 [1
+
+]
+
+! Package xkeyval Error: `1-2' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \includepdf[1-2]{check.pdf}
+                                
+? q
+OK, entering \batchmode...
+File: check.pdf Graphic file (type pdf)
+<check.pdf>
+
+! Package xkeyval Error: `1-2' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \includepdf[1-2]{check.pdf}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: check.pdf Graphic file (type pdf)
+<check.pdf>
+
+! Package xkeyval Error: `1-2' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \includepdf[1-2]{check.pdf}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: check.pdf Graphic file (type pdf)
+<check.pdf>
+
+! Package xkeyval Error: `1-2' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \includepdf[1-2]{check.pdf}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: check.pdf Graphic file (type pdf)
+<check.pdf>
+
+! Package xkeyval Error: `1-2' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \includepdf[1-2]{check.pdf}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: check.pdf Graphic file (type pdf)
+<check.pdf>
+ [1
+
 
 ] (./sect1.tex
 LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <14> not available
@@ -1671,78 +1790,91 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 18.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 8.99994pt on input line 18.
- [1
+ [2
 
 ]
 File: ../img/compo_s.pdf Graphic file (type pdf)
 <../img/compo_s.pdf>
-LaTeX Font Info:    Font shape `JT2/hmc/b/n' in size <10> not available
-(Font)              Font shape `JT2/hmc/bx/n' tried instead on input line 43.
-LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `JY2/hmc/b/n' in size <10> not available
-(Font)              Font shape `JY2/hmc/bx/n' tried instead on input line 43.
-LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-
-
-LaTeX Warning: Reference `table:freq' on page 2 undefined on input line 43.
-
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.5pt on input line 48.
+(Font)              scaled to size 7.5pt on input line 49.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 48.
-[2]
+(Font)              scaled to size 6.0pt on input line 49.
+ [3] [4]
+File: ../img/compo_v.pdf Graphic file (type pdf)
+<../img/compo_v.pdf>
 File: ../img/circuit/ltx.pdf Graphic file (type pdf)
 <../img/circuit/ltx.pdf>
 File: ../img/flow_ltx-1.pdf Graphic file (type pdf)
 <../img/flow_ltx-1.pdf>
 
-
-LaTeX Warning: Float too large for page by 19.07997pt on input line 130.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 139.
 
 File: ../img/circuit/lrcv_stx.pdf Graphic file (type pdf)
 <../img/circuit/lrcv_stx.pdf>
 File: ../img/flow_stx-1.pdf Graphic file (type pdf)
 <../img/flow_stx-1.pdf>
 
-LaTeX Warning: Float too large for page by 1554.93921pt on input line 143.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 152.
 
 File: ../img/circuit/srcv_vtx.pdf Graphic file (type pdf)
 <../img/circuit/srcv_vtx.pdf>
 File: ../img/flow_vtx-1.pdf Graphic file (type pdf)
 <../img/flow_vtx-1.pdf>
 
-LaTeX Warning: Float too large for page by 1790.83694pt on input line 156.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 165.
 
 File: ../img/circuit/vrcv.pdf Graphic file (type pdf)
 <../img/circuit/vrcv.pdf>
 File: ../img/flow_vrcv-1.pdf Graphic file (type pdf)
 <../img/flow_vrcv-1.pdf>
 
-LaTeX Warning: Float too large for page by 327.67108pt on input line 168.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 178.
 
-) (./biblio.tex [3] [4]) [5] [6] [7] [8] [9] [10] [11] [12] [13]
-(./template.aux)
+ [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]) (./sect3.tex [15
+
+] [16] [17]) (./sect4.tex
+LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
+ 7.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
+File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
+) [18
+
+]
+Overfull \hbox (5.94962pt too wide) in paragraph at lines 54--69
+ [][] 
+ []
+
+ [19] [20]) (./sect5.tex [21
+
+]) (./sect6.tex [22]) (./biblio.tex [23] [24]) (./apndx.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 4.
+LaTeX Font Info:    Trying to load font information for T1+RobotoMono-TLF on in
+put line 4.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/roboto/T1RobotoMono-TLF.fd
+File: T1RobotoMono-TLF.fd 2019/12/11 (autoinst) Font definitions for T1/RobotoM
+ono-TLF.
+)
+LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/m/n' aliased to
+(Font)              `T1/RobotoMono-TLF/regular/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/regular/n' will be
+(Font)              scaled to size 8.54991pt on input line 4.
+LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/b/n' aliased to
+(Font)              `T1/RobotoMono-TLF/bold/n' on input line 1.
+LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/bold/n' will be
+(Font)              scaled to size 8.54991pt on input line 1.
+ [25
+
+] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39]) [40] (
+./template.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: BC18FC66F8E2BDEED17117D59CACA2E3;1928.
- ) 
-Here is how much of TeX's memory you used:
- 36219 strings out of 474774
- 677064 string characters out of 5758802
- 1936032 words of memory out of 5000000
- 58012 multiletter control sequences out of 15000+600000
- 754978 words of font info for 194 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 105i,10n,129p,854b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on template.dvi (14 pages, 35460 bytes).
+(rerunfilecheck)             Checksum: A485D247B673C1A7B00F13848138EFD2;3661.
+ )
+Output written on template.dvi (41 pages, 372956 bytes).

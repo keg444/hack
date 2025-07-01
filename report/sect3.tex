@@ -1,0 +1,130 @@
+\section{スケジュールと担当}
+本システムでは光通信，音通信，振動通信の3部門に分かれ，それぞれを実装し，結合した．
+各部門における作業とその担当者，週ごとの作業内容を図\ref{fig:gantt}に示す．
+しかし，実際は音送信のプログラム作成に時間がかかってしまったことと音通信，振動送信が想定より実装が困難であったため担当者を変更し，実際のスケジュールは図\ref{fig:gantt2}のようになった．
+報告者は抵抗，スピーカ，マイクの調達，音送受信の回路とプログラムの作成，光通信と音通信，全体のテストを担当した．
+\begin{figure}[htbp]
+    \begin{center}
+        \begin{ganttchart}[
+        y unit title=0.4cm,
+        y unit chart=0.5cm,
+        vgrid,hgrid,
+        title label anchor/.style={below=-1.6ex},
+        title left shift=.05,
+        title right shift=-.05,
+        title height=1,
+        progress label text={},
+        bar height=0.7,
+        group right shift=0,
+        group top shift=.6,
+        group height=.3
+        ]{1}{12}
+% Title
+    \gantttitle{4 Weeks}{12} \\
+    \gantttitle{Week7}{3} 
+    \gantttitle{Week8}{3} 
+    \gantttitle{Week9}{3} 
+    \gantttitle{Week10}{3} \\
+
+    % Tasks
+    \ganttbar{LED調達/山口}{1}{3} \\
+    \ganttbar{抵抗調達/山口}{1}{3} \\
+    \ganttbar{照度センサ調達/山口}{1}{3} \\
+    \ganttbar{抵抗調達/久峩}{1}{3} \\
+    \ganttbar{スピーカ調達/久峩}{1}{3} \\
+    \ganttbar{マイク調達/久峩}{1}{3} \\
+    \ganttbar{DCモータ調達/金枝}{1}{3} \\
+    \ganttbar{加速度センサ調達/金枝}{1}{3} \\
+    \ganttbar{mac持参/全員}{1}{3} \\
+    \ganttbar{Arduino UNO/全員}{1}{3} \\
+    \ganttbar{4進変換プログラム/山口}{1}{3} \\
+    \ganttbar{光送信 回路作成/山口}{1}{6} \\
+    \ganttbar{光送信 プログラム作成/山口}{1}{6} \\
+    \ganttbar{光受信 回路作成/久峩}{4}{9} \\
+    \ganttbar{光受信 プログラム作成/久峩}{4}{9} \\
+    \ganttbar{音送信 回路作成/久峩}{1}{6} \\
+    \ganttbar{音送信 プログラム作成/久峩}{1}{6} \\
+    \ganttbar{音受信 回路作成/金枝}{4}{9} \\
+    \ganttbar{音受信 プログラム作成/金枝}{4}{9} \\
+    \ganttbar{振動送信 回路作成/金枝}{1}{6} \\
+    \ganttbar{振動送信 プログラム作成/金枝}{1}{6} \\
+    \ganttbar{振動受信 回路作成/沢田}{4}{9} \\
+    \ganttbar{振動受信 プログラム作成/沢田}{4}{9} \\
+    \ganttbar{結果出力/沢田}{4}{9} \\
+    \ganttbar{光通信 ビット送信確認/山口・久峩}{7}{12} \\
+    \ganttbar{光通信 プログラム確認/山口・久峩}{7}{12} \\
+    \ganttbar{音通信 ビット送信確認/久峩・金枝}{7}{12} \\
+    \ganttbar{音通信 プログラム確認/久峩・金枝}{7}{12} \\
+    \ganttbar{振動通信 ビット送信確認/金枝・沢田}{7}{12} \\
+    \ganttbar{振動通信 プログラム確認/金枝・沢田}{7}{12} \\
+    \ganttbar{全体 ビット送信確認/全員}{10}{12} \\
+    \ganttbar{全体 プログラム確認/全員}{10}{12} \\
+    \end{ganttchart}
+    \end{center}
+    \caption{計画時のスケジュール}
+    \label{fig:gantt}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \begin{ganttchart}[
+        y unit title=0.4cm,
+        y unit chart=0.5cm,
+        vgrid,hgrid,
+        title label anchor/.style={below=-1.6ex},
+        title left shift=.05,
+        title right shift=-.05,
+        title height=1,
+        progress label text={},
+        bar height=0.7,
+        group right shift=0,
+        group top shift=.6,
+        group height=.3
+        ]{1}{12}
+% Title
+    \gantttitle{4 Weeks}{12} \\
+    \gantttitle{Week7}{3} 
+    \gantttitle{Week8}{3} 
+    \gantttitle{Week9}{3} 
+    \gantttitle{Week10}{3} \\
+
+    % Tasks
+    \ganttbar{LED調達/山口}{1}{3} \\
+    \ganttbar{抵抗調達/山口}{1}{3} \\
+    \ganttbar{照度センサ調達/山口}{1}{3} \\
+    \ganttbar{抵抗調達/久峩}{1}{3} \\
+    \ganttbar{スピーカ調達/久峩}{1}{3} \\
+    \ganttbar{マイク調達/久峩}{1}{3} \\
+    \ganttbar{DCモータ調達/金枝}{1}{3} \\
+    \ganttbar{加速度センサ調達/金枝}{1}{3} \\
+    \ganttbar{mac持参/全員}{1}{3} \\
+    \ganttbar{Arduino UNO/全員}{1}{3} \\
+    \ganttbar{4進変換プログラム/山口}{1}{3} \\
+    \ganttbar{光送信 回路作成/山口}{1}{6} \\
+    \ganttbar{光送信 プログラム作成/山口}{1}{6} \\
+    \ganttbar{光受信 回路作成/山口}{4}{9} \\
+    \ganttbar{光受信 プログラム作成/山口}{4}{9} \\
+    \ganttbar{音送信 回路作成/久峩}{1}{6} \\
+    \ganttbar{音送信 プログラム作成/久峩}{1}{6} \\
+    \ganttbar{音受信 回路作成/久峩}{4}{9} \\
+    \ganttbar{音受信 プログラム作成/久峩}{4}{9} \\
+    \ganttbar{振動送信 回路作成/金枝}{1}{6} \\
+    \ganttbar{振動送信 プログラム作成/金枝}{1}{6} \\
+    \ganttbar{振動受信 回路作成/沢田}{4}{9} \\
+    \ganttbar{振動受信 プログラム作成/沢田}{4}{9} \\
+    \ganttbar{結果出力/沢田}{4}{9} \\
+    \ganttbar{光通信 ビット送信確認/山口・久峩}{7}{12} \\
+    \ganttbar{光通信 プログラム確認/山口・久峩}{7}{12} \\
+    \ganttbar{音通信 ビット送信確認/久峩・金枝}{7}{12} \\
+    \ganttbar{音通信 プログラム確認/久峩・金枝}{7}{12} \\
+    \ganttbar{振動通信 ビット送信確認/金枝・沢田}{7}{12} \\
+    \ganttbar{振動通信 プログラム確認/金枝・沢田}{7}{12} \\
+    \ganttbar{全体 ビット送信確認/全員}{10}{12} \\
+    \ganttbar{全体 プログラム確認/全員}{10}{12} \\
+    \end{ganttchart}
+    \end{center}
+    \caption{実際のスケジュール}
+    \label{fig:gantt2}
+\end{figure}
+
+\clearpage
