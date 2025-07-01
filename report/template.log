@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  1 JUL 2025 10:26
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,7 +1250,11 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \gtt@calendar@startofweek=\count345
 \gtt@left@slot=\count346
 \gtt@right@slot=\count347
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -1329,14 +1333,9 @@ Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
 \c@Hy@tempcnt=\count352
- (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
 LaTeX Info: Redefining \url on input line 4784.
 \XeTeXLinkMargin=\dimen311
-
-(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
@@ -1387,8 +1386,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip66
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 20.
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 21.
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
  (/usr/local/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 Package: pxjahyper 2023/03/01 v1.3
 
@@ -1601,26 +1600,130 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 2.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 14.0pt on input line 2.
-LaTeX Font Info:    Font shape `JT2/hmc/b/n' in size <10> not available
-(Font)              Font shape `JT2/hmc/bx/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 3.
-LaTeX Font Info:    Font shape `JY2/hmc/b/n' in size <10> not available
-(Font)              Font shape `JY2/hmc/bx/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 3.
-
-
-LaTeX Warning: Citation `ref:quake' on page 1 undefined on input line 3.
-
-)
+) (./sect2.tex
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 44.
+(Font)              scaled to size 12.0pt on input line 4.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 44.
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <12> not available
+(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <12> not available
+(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 5.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <10> not available
+(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <10> not available
+(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 5.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+File: ../img/compo_l.pdf Graphic file (type pdf)
+<../img/compo_l.pdf>
+LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 18.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <8.99994> not available
+(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <8.99994> not available
+(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 18.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 8.99994pt on input line 18.
  [1
 
-] (./template.aux)
+]
+File: ../img/compo_s.pdf Graphic file (type pdf)
+<../img/compo_s.pdf>
+LaTeX Font Info:    Font shape `JT2/hmc/b/n' in size <10> not available
+(Font)              Font shape `JT2/hmc/bx/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `JT2/hmc/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 43.
+LaTeX Font Info:    Font shape `JY2/hmc/b/n' in size <10> not available
+(Font)              Font shape `JY2/hmc/bx/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `JY2/hmc/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 43.
+
+
+LaTeX Warning: Reference `table:freq' on page 2 undefined on input line 43.
+
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 7.5pt on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 48.
+[2]
+File: ../img/circuit/ltx.pdf Graphic file (type pdf)
+<../img/circuit/ltx.pdf>
+File: ../img/flow_ltx-1.pdf Graphic file (type pdf)
+<../img/flow_ltx-1.pdf>
+
+
+LaTeX Warning: Float too large for page by 19.07997pt on input line 130.
+
+File: ../img/circuit/lrcv_stx.pdf Graphic file (type pdf)
+<../img/circuit/lrcv_stx.pdf>
+File: ../img/flow_stx-1.pdf Graphic file (type pdf)
+<../img/flow_stx-1.pdf>
+
+LaTeX Warning: Float too large for page by 1554.93921pt on input line 143.
+
+File: ../img/circuit/srcv_vtx.pdf Graphic file (type pdf)
+<../img/circuit/srcv_vtx.pdf>
+File: ../img/flow_vtx-1.pdf Graphic file (type pdf)
+<../img/flow_vtx-1.pdf>
+
+LaTeX Warning: Float too large for page by 1790.83694pt on input line 156.
+
+File: ../img/circuit/vrcv.pdf Graphic file (type pdf)
+<../img/circuit/vrcv.pdf>
+File: ../img/flow_vrcv-1.pdf Graphic file (type pdf)
+<../img/flow_vrcv-1.pdf>
+
+LaTeX Warning: Float too large for page by 327.67108pt on input line 168.
+
+) (./biblio.tex [3] [4]) [5] [6] [7] [8] [9] [10] [11] [12] [13]
+(./template.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2023-11-01> patch level 1
@@ -1631,15 +1734,15 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 97D403DC0D768591A0684931ADD85778;142.
+(rerunfilecheck)             Checksum: BC18FC66F8E2BDEED17117D59CACA2E3;1928.
  ) 
 Here is how much of TeX's memory you used:
- 36019 strings out of 474774
- 672635 string characters out of 5758802
- 1925032 words of memory out of 5000000
- 57834 multiletter control sequences out of 15000+600000
- 691099 words of font info for 135 fonts, out of 8000000 for 9000
+ 36219 strings out of 474774
+ 677064 string characters out of 5758802
+ 1936032 words of memory out of 5000000
+ 58012 multiletter control sequences out of 15000+600000
+ 754978 words of font info for 194 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 105i,9n,129p,854b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,10n,129p,854b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.dvi (2 pages, 11468 bytes).
+Output written on template.dvi (14 pages, 35460 bytes).
