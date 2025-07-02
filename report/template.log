@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 08:10
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 08:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1633,79 +1633,6 @@ ns
 )
 [1
 
-]
-
-! Package xkeyval Error: `1-2' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \includepdf[1-2]{check.pdf}
-                                
-? q
-OK, entering \batchmode...
-File: check.pdf Graphic file (type pdf)
-<check.pdf>
-
-! Package xkeyval Error: `1-2' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \includepdf[1-2]{check.pdf}
-                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: check.pdf Graphic file (type pdf)
-<check.pdf>
-
-! Package xkeyval Error: `1-2' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \includepdf[1-2]{check.pdf}
-                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: check.pdf Graphic file (type pdf)
-<check.pdf>
-
-! Package xkeyval Error: `1-2' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \includepdf[1-2]{check.pdf}
-                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: check.pdf Graphic file (type pdf)
-<check.pdf>
-
-! Package xkeyval Error: `1-2' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \includepdf[1-2]{check.pdf}
-                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: check.pdf Graphic file (type pdf)
-<check.pdf>
- [1
-
-
 ] (./sect1.tex
 LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <14> not available
 (Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 2.
@@ -1790,7 +1717,7 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 18.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 8.99994pt on input line 18.
- [2
+ [1
 
 ]
 File: ../img/compo_s.pdf Graphic file (type pdf)
@@ -1799,13 +1726,14 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 7.5pt on input line 49.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.0pt on input line 49.
- [3] [4]
+ [2] [3]
 File: ../img/compo_v.pdf Graphic file (type pdf)
 <../img/compo_v.pdf>
 File: ../img/circuit/ltx.pdf Graphic file (type pdf)
 <../img/circuit/ltx.pdf>
 File: ../img/flow_ltx-1.pdf Graphic file (type pdf)
 <../img/flow_ltx-1.pdf>
+
 
 LaTeX Warning: Float too large for page by 19.07997pt on input line 139.
 
@@ -1830,24 +1758,26 @@ File: ../img/flow_vrcv-1.pdf Graphic file (type pdf)
 
 LaTeX Warning: Float too large for page by 19.07997pt on input line 178.
 
- [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]) (./sect3.tex [15
+[4] [5] [6] [7] [8] [9] [10] [11] [12] [13]) (./sect3.tex [14
 
-] [16] [17]) (./sect4.tex
+] [15] [16])
+(./sect4.tex
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
  7.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
-) [18
+) [17
 
 ]
 Overfull \hbox (5.94962pt too wide) in paragraph at lines 54--69
  [][] 
  []
 
- [19] [20]) (./sect5.tex [21
+[18] [19]) (./sect5.tex [20
 
-]) (./sect6.tex [22]) (./biblio.tex [23] [24]) (./apndx.tex
+]) (./sect6.tex [21]) (./biblio.tex [22] [23])
+(./apndx.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 4.
 LaTeX Font Info:    Trying to load font information for T1+RobotoMono-TLF on in
@@ -1865,16 +1795,21 @@ LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/b/n' aliased to
 (Font)              `T1/RobotoMono-TLF/bold/n' on input line 1.
 LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/bold/n' will be
 (Font)              scaled to size 8.54991pt on input line 1.
- [25
 
-] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39]) [40] (
-./template.aux)
+[24
+
+] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38])
+[39] (./template.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: A485D247B673C1A7B00F13848138EFD2;3661.
  )
-Output written on template.dvi (41 pages, 372956 bytes).
+Output written on template.dvi (40 pages, 372392 bytes).
