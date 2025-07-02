@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 08:21
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1805,11 +1805,7 @@ pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: A485D247B673C1A7B00F13848138EFD2;3661.
  )
-Output written on template.dvi (40 pages, 372392 bytes).
+Output written on template.dvi (40 pages, 372408 bytes).
