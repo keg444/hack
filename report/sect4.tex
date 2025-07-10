@@ -1,4 +1,5 @@
 \section{システムの動作}
+\label{operation}
 \subsection{動作確認の手順}
 3部門を結合して動作確認を行った．
 具体的には，最初にシリアルモニタに"chiba"と入力し，光通信→音通信→振動通信の順で通信を行っていき，各部門にかかる時間と受け取った4進数または2進数の数列，最終的にデコードされた文字を記録した．
@@ -11,6 +12,7 @@
 \end{itemize}
 
 \subsection{目標の設定}
+\label{target}
 本システムが有効であるかの指標として，各部門に表\ref{table:sihyo}のような目標を設定する．
 これらの目標に到達することで，有効なシステムであると判断する．
 bps（bit par second）は，1秒あたりに送信されたビット数を表す．
@@ -41,6 +43,7 @@ bps（bit par second）は，1秒あたりに送信されたビット数を表�
 
 
 \subsection{動作結果}
+\label{result}
 計12回の試行を行った結果を表\ref{table:result}に，各部門で変換した4進数または2進数を表\ref{table:result2}，表\ref{table:result3}に示す．
 光，音，振動通信と全体の経過時間の平均はそれぞれ1.07 s，5.23 s，14.20 s，20.51 sだった．
 光通信では一度も間違って通信することはなかったが，音通信では12回中2回，振動通信では12回中11回誤った情報が伝送された．
@@ -110,5 +113,17 @@ bps（bit par second）は，1秒あたりに送信されたビット数を表�
         12  &cv6\&  &11000111110110011011001001100000000100000000000  \\ \hline
     \end{tabular}
 \end{table}
+
+
+% \begin{table}[htbp]
+%     \centering
+%     \caption{}
+%     \label{}
+%     \begin{tabular}{ccc} \hline
+%          &  &  \\ \hline
+%          &  &  \\ \hline
+%     \end{tabular}
+% \end{table}
+
 
 \clearpage

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  2 JUL 2025 12:52
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  10 JUL 2025 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1648,129 +1648,130 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 14.0pt on input line 2.
 ) (./sect2.tex
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 4.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <12> not available
-(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 4.
-LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <12> not available
-(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 4.
-LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 4.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
 (Font)              `T1/Roboto-LF/regular/n' on input line 5.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
-LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <10> not available
+(Font)              scaled to size 12.0pt on input line 5.
+LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <12> not available
 (Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
-LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <10> not available
+(Font)              scaled to size 12.0pt on input line 5.
+LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <12> not available
 (Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 5.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 5.
+LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
+LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 7.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
+LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <10> not available
+(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
+LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <10> not available
+(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 7.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
 File: ../img/compo_l.pdf Graphic file (type pdf)
 <../img/compo_l.pdf>
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 18.
+(Font)              `T1/Roboto-LF/regular/n' on input line 20.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JT2/hgt/b/n' in size <8.99994> not available
-(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 18.
+(Font)              Font shape `JT2/hgt/bx/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JT2/hgt/bx/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JY2/hgt/b/n' in size <8.99994> not available
-(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 18.
+(Font)              Font shape `JY2/hgt/bx/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JY2/hgt/bx/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 18.
+(Font)              `T1/Roboto-LF/bold/n' on input line 20.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 20.
  [1
 
 ]
 File: ../img/compo_s.pdf Graphic file (type pdf)
 <../img/compo_s.pdf>
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.5pt on input line 49.
+(Font)              scaled to size 7.5pt on input line 53.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 49.
- [2] [3]
+(Font)              scaled to size 6.0pt on input line 53.
+ [2]
 File: ../img/compo_v.pdf Graphic file (type pdf)
 <../img/compo_v.pdf>
+ [3] [4]
 File: ../img/circuit/ltx.pdf Graphic file (type pdf)
 <../img/circuit/ltx.pdf>
 File: ../img/flow_ltx-1.pdf Graphic file (type pdf)
 <../img/flow_ltx-1.pdf>
 
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 139.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 158.
 
 File: ../img/circuit/lrcv_stx.pdf Graphic file (type pdf)
 <../img/circuit/lrcv_stx.pdf>
 File: ../img/flow_stx-1.pdf Graphic file (type pdf)
 <../img/flow_stx-1.pdf>
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 152.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 171.
 
 File: ../img/circuit/srcv_vtx.pdf Graphic file (type pdf)
 <../img/circuit/srcv_vtx.pdf>
 File: ../img/flow_vtx-1.pdf Graphic file (type pdf)
 <../img/flow_vtx-1.pdf>
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 165.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 184.
 
 File: ../img/circuit/vrcv.pdf Graphic file (type pdf)
 <../img/circuit/vrcv.pdf>
 File: ../img/flow_vrcv-1.pdf Graphic file (type pdf)
 <../img/flow_vrcv-1.pdf>
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 178.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 197.
 
-[4] [5] [6] [7] [8] [9] [10] [11] [12] [13]) (./sect3.tex [14
+[5] [6] [7] [8] [9] [10] [11] [12] [13]) (./sect3.tex [14
 
 ] [15] [16])
 (./sect4.tex
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
- 7.
+ 8.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 ) [17
 
 ]
-Overfull \hbox (5.94962pt too wide) in paragraph at lines 54--69
+Overfull \hbox (5.94962pt too wide) in paragraph at lines 57--72
  [][] 
  []
 
@@ -1808,4 +1809,4 @@ L3 programming layer <2024-02-20>
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: A485D247B673C1A7B00F13848138EFD2;3661.
  )
-Output written on template.dvi (40 pages, 372408 bytes).
+Output written on template.dvi (40 pages, 374768 bytes).
