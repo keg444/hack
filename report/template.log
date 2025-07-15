@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  10 JUL 2025 12:50
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.15)  16 JUL 2025 05:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1691,12 +1691,15 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 7.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 10.0pt on input line 7.
+LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 14.
+LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 14.
+ [1
+
+]
 File: ../img/compo_l.pdf Graphic file (type pdf)
 <../img/compo_l.pdf>
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 20.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 20.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
@@ -1717,49 +1720,45 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 20.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 8.99994pt on input line 20.
- [1
-
-]
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 7.5pt on input line 38.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 38.
 File: ../img/compo_s.pdf Graphic file (type pdf)
 <../img/compo_s.pdf>
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.5pt on input line 53.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 53.
- [2]
+ [2] [3]
 File: ../img/compo_v.pdf Graphic file (type pdf)
 <../img/compo_v.pdf>
- [3] [4]
 File: ../img/circuit/ltx.pdf Graphic file (type pdf)
 <../img/circuit/ltx.pdf>
 File: ../img/flow_ltx-1.pdf Graphic file (type pdf)
 <../img/flow_ltx-1.pdf>
 
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 158.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 188.
 
 File: ../img/circuit/lrcv_stx.pdf Graphic file (type pdf)
 <../img/circuit/lrcv_stx.pdf>
 File: ../img/flow_stx-1.pdf Graphic file (type pdf)
 <../img/flow_stx-1.pdf>
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 171.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 201.
 
 File: ../img/circuit/srcv_vtx.pdf Graphic file (type pdf)
 <../img/circuit/srcv_vtx.pdf>
 File: ../img/flow_vtx-1.pdf Graphic file (type pdf)
 <../img/flow_vtx-1.pdf>
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 184.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 214.
 
 File: ../img/circuit/vrcv.pdf Graphic file (type pdf)
 <../img/circuit/vrcv.pdf>
 File: ../img/flow_vrcv-1.pdf Graphic file (type pdf)
 <../img/flow_vrcv-1.pdf>
 
-LaTeX Warning: Float too large for page by 19.07997pt on input line 197.
+LaTeX Warning: Float too large for page by 19.07997pt on input line 227.
 
-[5] [6] [7] [8] [9] [10] [11] [12] [13]) (./sect3.tex [14
+[4] [5] [6] [7] [8] [9] [10] [11] [12] [13]) (./sect3.tex [14
 
 ] [15] [16])
 (./sect4.tex
@@ -1771,13 +1770,14 @@ File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 ) [17
 
 ]
-Overfull \hbox (5.94962pt too wide) in paragraph at lines 57--72
+[18]
+Overfull \hbox (5.94962pt too wide) in paragraph at lines 98--113
  [][] 
  []
 
-[18] [19]) (./sect5.tex [20
+[19] [20]) (./sect5.tex [21
 
-]) (./sect6.tex [21]) (./biblio.tex [22] [23])
+] [22]) (./sect6.tex) (./biblio.tex [23] [24])
 (./apndx.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 4.
@@ -1797,16 +1797,16 @@ LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/b/n' aliased to
 LaTeX Font Info:    Font shape `T1/RobotoMono-TLF/bold/n' will be
 (Font)              scaled to size 8.54991pt on input line 1.
 
-[24
+[25
 
-] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38])
-[39] (./template.aux)
+] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39])
+[40] (./template.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: A485D247B673C1A7B00F13848138EFD2;3661.
+(rerunfilecheck)             Checksum: AAD65E87C79DE1A8DA0BD4EE6F7C7D60;4048.
  )
-Output written on template.dvi (40 pages, 374768 bytes).
+Output written on template.dvi (41 pages, 381208 bytes).

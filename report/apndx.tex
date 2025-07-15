@@ -28,7 +28,7 @@ void loop() {
       getBase4(ascii);
     }
 
-    Base4sousin();
+    Base4send();
     
     for (int i = 0; i < resultIndex; i++) {
       Serial.print(base4[i]);
@@ -48,7 +48,7 @@ void getBase4(byte b) {
   }
 }
 
-void Base4sousin() {
+void Base4send() {
   digitalWrite(A4, HIGH);
 
   for (int k = 0; k < resultIndex; k++) {
